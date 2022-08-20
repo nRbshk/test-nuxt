@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+    nginx:
+        build: ./nginx
+        container_name: nginx
+        networks:
+            - thenet
+        ports:
+            - ${NGINX_PORT}:80
+    app:
+        build: ./app
+        container_name: app
+        volumes:
+            - ./app:/usr/src/app
+            - /usr/src/app/node_modules
+        networks:
+            - thenet
+        # unccomment for direct http://localhost:{APP_PORT}
+        # ports:
+        #     - ${APP_PORT}:3000
+    frontend:
+        build: ./frontend
+        container_name: frontend
+        volumes:
+            - ./frontend:/usr/src/frontend/
+            - /usr/src/frontend/node_modules
+        networks:
+            - thenet
+        # unccomment for direct http://localhost:{FRONTEND_PORT}
+        # ports:
+        #     - ${FRONTEND_PORT}:4444
+
+networks:
+    thenet:
