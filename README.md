@@ -1,4 +1,4 @@
-# text-nuxt
+# test-nuxt
 
 # fast start
 ## launch containers 

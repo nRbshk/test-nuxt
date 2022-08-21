@@ -15,4 +15,4 @@ COPY . .
 # EXPOSE 3000 
 
 # run app
-CMD npm run start
+ENV HOST 0.0.0.0

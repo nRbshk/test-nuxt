@@ -15,5 +15,6 @@ COPY . .
 # EXPOSE 4444 
 
 # run app
-CMD yarn build && yarn start
-# CMD npm run start
+CMD yarn build
+
+ENV HOST 0.0.0.0
