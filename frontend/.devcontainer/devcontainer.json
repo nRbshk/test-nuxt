@@ -7,6 +7,28 @@
   "service": "frontend",
   "shutdownAction": "none",
   "settings": {
+    "css.lint.unknownAtRules": "ignore",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[vue]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "tailwindCSS.includeLanguages": {
+      "vue": "html",
+      "vue-html": "html",
+      "css": "css"
+    },
+    "editor.quickSuggestions": {
+      "strings": true
+    },
     "terminal.integrated.defaultProfile.linux": "bash"
   },
   "extensions": [
