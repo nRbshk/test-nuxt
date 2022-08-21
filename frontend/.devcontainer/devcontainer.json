@@ -16,6 +16,6 @@
     "bradlc.vscode-tailwindcss"
   ],
   // Open the sub-folder with the source code
-  "workspaceFolder": "/workspace/frontend",
-  "remoteUser": "node"
+  "workspaceFolder": "/workspace/frontend"
+  // "remoteUser": "node"
 }

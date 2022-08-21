@@ -14,5 +14,4 @@ COPY . .
 # uncomment this, if you want to directly access node app
 # EXPOSE 3000 
 
-# run app
-ENV HOST 0.0.0.0
+# ENV HOST 0.0.0.0

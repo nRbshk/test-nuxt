@@ -12,9 +12,9 @@ RUN yarn install
 COPY . .
 
 # uncomment this, if you want to directly access node app
-# EXPOSE 4444 
+# EXPOSE 3000 
 
-# run app
+# build frontend
 CMD yarn build
 
-ENV HOST 0.0.0.0
+# ENV HOST 0.0.0.0
