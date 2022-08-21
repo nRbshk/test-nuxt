@@ -1,7 +1,7 @@
 FROM node:16
 
 # create workdir
-WORKDIR /usr/src/app
+WORKDIR /workspace/app
 
 COPY package*.json .
 

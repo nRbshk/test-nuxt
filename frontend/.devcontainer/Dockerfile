@@ -1,7 +1,7 @@
 FROM node:16
 
 # create workdir
-WORKDIR /usr/src/frontend
+WORKDIR /workspace/frontend
 
 COPY package*.json .
 

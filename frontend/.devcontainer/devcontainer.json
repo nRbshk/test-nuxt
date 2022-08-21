@@ -1,0 +1,21 @@
+{
+  "name": "frontend",
+  "dockerComposeFile": [
+    "../../docker-compose.yml",
+    "../../docker-compose.devcontainer.yml"
+  ],
+  "service": "frontend",
+  "shutdownAction": "none",
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "extensions": [
+    "vue.volar",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "bradlc.vscode-tailwindcss"
+  ],
+  // Open the sub-folder with the source code
+  "workspaceFolder": "/workspace/frontend",
+  "remoteUser": "node"
+}

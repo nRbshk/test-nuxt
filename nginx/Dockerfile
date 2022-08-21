@@ -1,3 +1,3 @@
 FROM nginx:stable
-COPY nginx.conf /etc/nginx/default.conf
+COPY nginx.conf /etc/nginx/nginx.conf
 EXPOSE 80

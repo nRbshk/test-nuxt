@@ -1,0 +1,18 @@
+{
+  "name": "app",
+  "dockerComposeFile": [
+    "../../docker-compose.yml",
+    "../../docker-compose.extend.yml"
+  ],
+  "service": "app",
+  "shutdownAction": "none",
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "extensions": [
+    "dbaeumer.vscode-eslint"
+  ],
+  // Open the sub-folder with the source code
+  "workspaceFolder": "/workspace/app",
+  "remoteUser": "node"
+}
