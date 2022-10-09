@@ -41,8 +41,7 @@ services:
         # unccomment for direct http://localhost:{FRONTEND_PORT}
         # ports:
         #     - ${FRONTEND_PORT}:3000
-        command:
-            "yarn preview"
+        command: bash -c "yarn build && yarn preview; while true; do sleep 10; done;"
 
 networks:
     thenet:
